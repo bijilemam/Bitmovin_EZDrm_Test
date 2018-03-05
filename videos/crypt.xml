@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GPACDRM type="CENC AES-CTR">
+ <DRMInfo type="pssh" version="0">
+    <!-- See Widevine documentation for details. -->
+    <BS ID128="edef8ba979d64acea3c827dcd51d21ed"/><!-- Widevine identifier. -->
+    <BS data64="EhDM8ccRYxZauJi07qSGuet/Gghtb3ZpZG9uZSIQSQTMx0OpVkix1MumpHmQK0jj3JWbBg=="/>
+  </DRMInfo>  
+   <CrypTrack trackID="1" IsEncrypted="1" IV_size="8" first_IV="0x22ee7d4745d3a26a" saiSavedBox="senc">
+	<key KID="0X298b3a48a6e9686c89f8f618ed3a820a" value="0xccf1c71163165ab898b4eea486b9eb7f"/>
+  </CrypTrack>
+</GPACDRM>

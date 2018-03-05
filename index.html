@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7/bitmovinplayer.js"></script>
+</head>
+<body>
+    <div id="my-player"></div>
+    <script type="text/javascript">        
+  var conf = {
+    key: "02211124-a6c9-4343-bfcb-f383c33a630d",
+    source: {
+        dash: "http://10.0.20.65/bitmovin_Ezdrm_Test/videos/manifest.mpd",
+      drm: {
+          widevine: {
+              LA_URL: 'https://widevine-dash.ezdrm.com/proxy?pX=167694'
+          }
+      }
+    }
+  };
+
+  var player = bitmovin.player('my-player');
+
+  player.setup(conf).then(function(playerInstance) {
+    console.log('Successfully created Bitmovin Player instance');
+  }, function(reason) {
+    console.log('Error while creating Bitmovin Player instance');
+  });
+    </script>
+</body>
+</html>
